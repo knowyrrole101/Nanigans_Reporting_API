@@ -9,6 +9,7 @@ var attributes = ["adType"];
 var date = ["10/01/2016", "11/16/2016"];
 //Abstract to Specicfic Client script
 
+//Brainwell data to be passed into API Calls
 var savedViewParams = {
   baseUrl: config.nanigans.baseUrl,
   siteId: 507323,
@@ -30,6 +31,7 @@ var placementParams = {
 var savedView = nanigans.savedViewReport(savedViewParams);
 var returnData = nanigans.fetchData(savedView);
 console.log(returnData);
+
 //console.log(nanigans.fetchData());
 // console.log(Object.keys(urlParams));
 //var endpoint = attributesApiHook(placementParams);
